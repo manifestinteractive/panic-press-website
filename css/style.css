@@ -1140,7 +1140,10 @@ cite span {
 }
 .contact select
 {
-    text-indent: 12px;
+    background: url(../img/select.svg) right center no-repeat #FFF;
+    color: #aaa;
+    -webkit-appearance: none;
+
 }
 
 .contact input:focus, textarea:focus, select:focus {
