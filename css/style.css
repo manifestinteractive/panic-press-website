@@ -407,6 +407,11 @@ header {
     padding-top: 30px;
 }
 
+#intro.short-header
+{
+    height: auto;
+}
+
 .top-bar {
     display: inline-block;
     width: 100%;
@@ -621,6 +626,21 @@ header {
     padding-top: 190px;
 }
 
+.get-started ul
+{
+    list-style: square;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.get-started ul li
+{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #989898;
+    margin-left: 20px;
+}
+
 .icon-wrap {
     text-align: center;
     margin-bottom: 30px;
@@ -814,15 +834,6 @@ header {
     -o-transform: rotate(-10deg);
 }
 
-.tooltip-left .arrow {
-    background: url(../img/bg/arrow-left.png) center no-repeat;
-    width: 76px;
-    height: 62px;
-    position: absolute;
-    top: 30px;
-    left: 50px;
-}
-
 .tooltip-left p, .tooltip-right p {
     color: #bbbbbb;
     font-size: 21px;
@@ -837,15 +848,6 @@ header {
     -moz-transform: rotate(10deg);
     -webkit-transform: rotate(10deg);
     -o-transform: rotate(10deg);
-}
-
-.tooltip-right .arrow {
-    background: url(../img/bg/arrow-right.png) center no-repeat;
-    width: 57px;
-    height: 90px;
-    position: absolute;
-    top: 30px;
-    right: 50px;
 }
 
 
@@ -1406,7 +1408,15 @@ body.slide-menu .top-bar.slidedown .logo {
     .icon-wrap h3 { font-size: 21px; margin-bottom: 20px; }
     .subheadline { font-size: 18px; line-height: 26px; }
     #intro { padding-top: 90px; height: 100% }
+    #intro.short-header
+    {
+        height: auto;
+    }
     header { height: 600px; }
+    header.short-header
+    {
+        height: auto;
+    }
     .headline p { padding: 0 20px; }
     .top-bar.slidedown { display: none; }
     .top-bar { position: fixed; top: 0; left: 0; width: 100%; z-index: 999; padding: 0 0 10px; margin: 0; }
@@ -1431,6 +1441,7 @@ body.slide-menu .top-bar.slidedown .logo {
     .arrow-left, .arrow-right { margin-top: -40px; }
 
     .get-started { padding-top: 160px; }
+    .get-started.short-header { padding-top: 40px; };
 
     .feature img { width: 55%; }
     .feature .first { left: 110px; top: 70px; }

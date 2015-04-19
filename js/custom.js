@@ -62,8 +62,11 @@ $(document).ready(function ()
 		var width = $(window).width();
 		var max = ( width < 601 ) ? 1 : 3;
 
-		mySwiper.params.slidesPerView = max;
-		mySwiper.update(true);
+		if(mySwiper)
+		{
+			mySwiper.params.slidesPerView = max;
+			mySwiper.update(true);
+		}
 	};
 
 	//-----------------------------------------------
@@ -185,7 +188,7 @@ $(document).ready(function ()
 	//----------------------------------------------
 
 	// Scroll Up
-	$('.scrollup, .logo a').click(function ()
+	$('.scrollup, .logo a:not(".no-scroll")').click(function ()
 	{
 		$("html, body").animate({scrollTop: 0}, 1200, 'easeInOutExpo');
 		return false;
